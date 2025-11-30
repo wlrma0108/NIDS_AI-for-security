@@ -1,0 +1,6 @@
+*.csv
+*.npy
+*.pkl
+*.model
+
+nids_output/nids_output/X_train.npy

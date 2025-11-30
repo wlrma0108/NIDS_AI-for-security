@@ -1,0 +1,190 @@
+{
+  "shape": [
+    175341,
+    44
+  ],
+  "columns": [
+    "id",
+    "dur",
+    "proto",
+    "service",
+    "state",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sttl",
+    "dttl",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_srv_src",
+    "ct_state_ttl",
+    "ct_dst_ltm",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "ct_dst_src_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "ct_src_ltm",
+    "ct_srv_dst",
+    "is_sm_ips_ports",
+    "attack_cat"
+  ],
+  "missing": {},
+  "class_distribution": {
+    "Normal": 56000,
+    "Generic": 40000,
+    "Exploits": 33393,
+    "Fuzzers": 18184,
+    "DoS": 12264,
+    "Reconnaissance": 10491,
+    "Analysis": 2000,
+    "Backdoor": 1746,
+    "Shellcode": 1133,
+    "Worms": 130
+  },
+  "imbalance_ratio": 430.7692307692308,
+  "high_correlation_pairs": [
+    {
+      "f1": "spkts",
+      "f2": "sbytes",
+      "corr": 0.9638
+    },
+    {
+      "f1": "spkts",
+      "f2": "sloss",
+      "corr": 0.9711
+    },
+    {
+      "f1": "dpkts",
+      "f2": "dbytes",
+      "corr": 0.9719
+    },
+    {
+      "f1": "dpkts",
+      "f2": "dloss",
+      "corr": 0.9786
+    },
+    {
+      "f1": "sbytes",
+      "f2": "sloss",
+      "corr": 0.9961
+    },
+    {
+      "f1": "dbytes",
+      "f2": "dloss",
+      "corr": 0.9965
+    },
+    {
+      "f1": "swin",
+      "f2": "dwin",
+      "corr": 0.9901
+    },
+    {
+      "f1": "ct_srv_src",
+      "f2": "ct_dst_src_ltm",
+      "corr": 0.9671
+    },
+    {
+      "f1": "ct_srv_src",
+      "f2": "ct_srv_dst",
+      "corr": 0.9803
+    },
+    {
+      "f1": "ct_dst_ltm",
+      "f2": "ct_src_dport_ltm",
+      "corr": 0.9621
+    },
+    {
+      "f1": "ct_dst_src_ltm",
+      "f2": "ct_srv_dst",
+      "corr": 0.9724
+    },
+    {
+      "f1": "is_ftp_login",
+      "f2": "ct_ftp_cmd",
+      "corr": 1.0
+    }
+  ],
+  "top_discriminative": [
+    {
+      "feature": "ct_dst_sport_ltm",
+      "disc_power": 4.6215171665281
+    },
+    {
+      "feature": "ct_srv_dst",
+      "disc_power": 2.973479538463967
+    },
+    {
+      "feature": "ct_src_dport_ltm",
+      "disc_power": 2.923971871436872
+    },
+    {
+      "feature": "ct_srv_src",
+      "disc_power": 2.7697298902333847
+    },
+    {
+      "feature": "ct_dst_src_ltm",
+      "disc_power": 2.4162810283083824
+    },
+    {
+      "feature": "ct_dst_ltm",
+      "disc_power": 1.963265252681767
+    },
+    {
+      "feature": "sttl",
+      "disc_power": 1.4473040072854504
+    },
+    {
+      "feature": "ct_src_ltm",
+      "disc_power": 0.790081671968959
+    },
+    {
+      "feature": "ct_state_ttl",
+      "disc_power": 0.46817056179777666
+    },
+    {
+      "feature": "dttl",
+      "disc_power": 0.4200305030653252
+    },
+    {
+      "feature": "swin",
+      "disc_power": 0.3868894044798372
+    },
+    {
+      "feature": "dwin",
+      "disc_power": 0.380970630926092
+    },
+    {
+      "feature": "dload",
+      "disc_power": 0.3664622877466574
+    },
+    {
+      "feature": "tcprtt",
+      "disc_power": 0.2841204278923565
+    },
+    {
+      "feature": "ackdat",
+      "disc_power": 0.2782803504786068
+    }
+  ]
+}

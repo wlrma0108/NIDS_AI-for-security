@@ -1,0 +1,49 @@
+No.,Name,Type ,Description
+1,srcip,nominal,출발지 IP 주소
+2,sport,integer,출발지 포트 번호
+3,dstip,nominal,목적지 IP 주소
+4,dsport,integer,목적지 포트 번호
+5,proto,nominal,트랜잭션 프로토콜
+6,state,nominal,"상태 및 종속 프로토콜을 나타냅니다. 예: ACC, CLO, CON, ECO, ECR, FIN, INT, MAS, PAR, REQ, RST, TST, TXD, URH, URN 및 (-) (사용되지 않은 상태일 경우)"
+7,dur,Float,전체 기록 지속 시간
+8,sbytes,Integer,출발지에서 목적지로의 트랜잭션 바이트
+9,dbytes,Integer,목적지에서 출발지로의 트랜잭션 바이트
+10,sttl,Integer,출발지에서 목적지로의 TTL(Time to Live) 값
+11,dttl,Integer,목적지에서 출발지로의 TTL 값
+12,sloss,Integer,출발지에서 재전송되거나 손실된 패킷
+13,dloss,Integer,목적지에서 재전송되거나 손실된 패킷
+14,service,nominal,"HTTP, FTP, SMTP, SSH, DNS, FTP-DATA, IRC 및 사용 빈도가 낮은 서비스의 경우 (-)"
+15,Sload,Float,출발지 초당 비트 수
+16,Dload,Float,목적지 초당 비트 수
+17,Spkts,integer,출발지에서 목적지로의 패킷 수
+18,Dpkts,integer,목적지에서 출발지로의 패킷 수
+19,swin,integer,출발지 TCP 윈도우 광고 값
+20,dwin,integer,목적지 TCP 윈도우 광고 값
+21,stcpb,integer,출발지 TCP 기본 시퀀스 번호
+22,dtcpb,integer,목적지 TCP 기본 시퀀스 번호
+23,smeansz,integer,출발지에서 전송된 흐름 패킷 크기의 평균값
+24,dmeansz,integer,목적지에서 전송된 흐름 패킷 크기의 평균값
+25,trans_depth,integer,HTTP 요청/응답 트랜잭션의 연결 파이프라인 깊이
+26,res_bdy_len,integer,서버의 HTTP 서비스에서 전송된 데이터의 실제 비압축 콘텐츠 크기
+27,Sjit,Float,출발지 지터(밀리초)
+28,Djit,Float,목적지 지터(밀리초)
+29,Stime,Timestamp,기록 시작 시간
+30,Ltime,Timestamp,기록 마지막 시간
+31,Sintpkt,Float,출발지 패킷 간 도착 시간(밀리초)
+32,Dintpkt,Float,목적지 패킷 간 도착 시간(밀리초)
+33,tcprtt,Float,TCP 연결 설정 왕복 시간 (SYN-ACK와 ACKDAT의 합)
+34,synack,Float,TCP 연결 설정 시간 (SYN과 SYN_ACK 패킷 사이의 시간)
+35,ackdat,Float,TCP 연결 설정 시간 (SYN_ACK와 ACK 패킷 사이의 시간)
+36,is_sm_ips_ports,Binary,"출발지와 목적지 IP 주소가 같고, 포트 번호도 같다면 값이 1, 그렇지 않으면 0"
+37,ct_state_ttl,Integer,특정 범위의 출발지/목적지 TTL 값에 따라 각 상태(6)의 수
+38,ct_flw_http_mthd,Integer,HTTP 서비스에서 GET 및 POST 메서드를 포함한 흐름의 수
+39,is_ftp_login,Binary,"FTP 세션이 사용자와 비밀번호로 접근되었으면 1, 그렇지 않으면 0"
+40,ct_ftp_cmd,integer,FTP 세션에서 명령어가 포함된 흐름의 수
+41,ct_srv_src,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 서비스(14)와 출발지 주소(1)를 포함하는 연결의 수
+42,ct_srv_dst,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 서비스(14)와 목적지 주소(3)를 포함하는 연결의 수
+43,ct_dst_ltm,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 목적지 주소(3)를 포함하는 연결의 수
+44,ct_src_ ltm,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 출발지 주소(1)를 포함하는 연결의 수
+45,ct_src_dport_ltm,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 출발지 주소(1)와 목적지 포트(4)를 포함하는 연결의 수
+46,ct_dst_sport_ltm,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 목적지 주소(3)와 출발지 포트(2)를 포함하는 연결의 수
+47,ct_dst_src_ltm,integer,마지막 시간(26)을 기준으로 최근 100개의 연결 중 동일한 출발지(1)와 목적지(3) 주소를 포함하는 연결의 수
+48,attack_cat,nominal,"각 공격 카테고리의 이름. 이 데이터셋에서는 9개의 카테고리가 있습니다: Fuzzers, Analysis, Backdoors, DoS, Exploits, Generic, Reconnaissance, Shellcode, Worms"
