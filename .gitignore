@@ -2,5 +2,7 @@
 *.npy
 *.pkl
 *.model
+*.tsv
 
+nids_output/nids_output/y_train.npy
 nids_output/nids_output/X_train.npy

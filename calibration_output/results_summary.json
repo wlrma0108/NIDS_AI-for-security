@@ -1,0 +1,56 @@
+{
+  "baseline_accuracy": 0.857135524492275,
+  "calibrated_accuracy": 0.8591601507918856,
+  "adjusted_accuracy": 0.8402199143383464,
+  "final_accuracy": 0.838474743499809,
+  "improvement": -0.01866078099246604,
+  "best_config": {
+    "exploits_thresh": 0.5,
+    "hard_boost": 1.0,
+    "hard_thresh": 0.30000000000000004,
+    "accuracy": 0.838474743499809,
+    "hard_recall_avg": 0.4234554071593332
+  },
+  "per_class_recall": {
+    "Analysis": {
+      "baseline": 0.214,
+      "final": 0.2275
+    },
+    "Backdoor": {
+      "baseline": 0.14719358533791524,
+      "final": 0.15979381443298968
+    },
+    "DoS": {
+      "baseline": 0.1350293542074364,
+      "final": 0.8830724070450098
+    },
+    "Exploits": {
+      "baseline": 0.9303147366214476,
+      "final": 0.5458030126074327
+    },
+    "Fuzzers": {
+      "baseline": 0.8124725032996041,
+      "final": 0.796909370875495
+    },
+    "Generic": {
+      "baseline": 0.983525,
+      "final": 0.984
+    },
+    "Normal": {
+      "baseline": 0.9631428571428572,
+      "final": 0.9705714285714285
+    },
+    "Reconnaissance": {
+      "baseline": 0.7504527690401296,
+      "final": 0.758364312267658
+    },
+    "Shellcode": {
+      "baseline": 0.76522506619594,
+      "final": 0.851721094439541
+    },
+    "Worms": {
+      "baseline": 0.7153846153846154,
+      "final": 0.8076923076923077
+    }
+  }
+}

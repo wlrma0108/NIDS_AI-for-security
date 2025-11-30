@@ -393,8 +393,8 @@ def get_xgb_params(n_classes):
 
 def get_catboost_params(n_classes):
     return {
-        'iterations': 1000,
-        'learning_rate': 0.05,
+        'iterations': 500,
+        'learning_rate': 0.10,
         'depth': 8,
         'l2_leaf_reg': 3,
         'random_seed': config.RANDOM_STATE,
